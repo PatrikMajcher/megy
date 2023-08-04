@@ -1,0 +1,343 @@
+
+/* Navigations */
+
+.navbar {
+    background: white !important;
+     
+}
+
+a {
+    color: black !important;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navbar__custom {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .navbar {
+        padding: 0;
+    }
+}
+
+.nav__logo , img {
+    width: 300px;
+}
+
+
+/* Container hero */
+
+.container__hero {
+    max-height: 950px;
+    max-width: 950px;
+}
+
+.container__hero ,img {
+  width: 100%;
+}
+
+/* TODO: Skuska implementacie z moshified.com */
+
+/* Links */
+a {
+    text-decoration: none;
+ }
+ 
+ .link-arrow {
+    color: pink !important;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+ }
+ 
+ .link-arrow::after {
+    content: '-->';
+    margin-left: 5px;
+    transition: margin 0.15s;
+ }
+ 
+ .link-arrow:hover::after {
+    margin-left: 10px;
+ }
+ 
+ @media screen and (min-width:1024px) {
+    .link-arrow {
+       font-size: 1.5rem;
+    }
+ }
+ 
+  /* Grids */
+
+  .grid {
+    display: grid;
+  }
+ 
+  @media screen and (min-width: 768px) {
+    .grid--1x2 {
+    grid-template-columns: repeat(2,1fr);
+    }
+    
+  }
+ 
+  @media screen and (min-width: 1024px) {
+    .grid--1x3 {
+    grid-template-columns: repeat(3,1fr);
+    }
+    
+  }
+
+  /* Blocks - Container */
+  .block {
+    --padding-vertical: 4rem;
+    padding: var(--padding-vertical) 2rem;
+    
+ 
+  }
+ 
+  .block__header {
+    text-align: center;
+    margin-bottom: 3rem;
+ 
+    
+  }
+ 
+  .block__heading {
+    margin-top: 0;
+  }
+ 
+  .block--dark {
+    background: #000;
+    color: #7b858b;
+  }
+ 
+ 
+  .block--dark .block__heading {
+    color: #fff;
+  }
+
+  .block__ponuka {
+     margin-top: 3rem;
+     border-radius: 10px;
+     box-shadow: 0 0 20px 20px #f3f3f3;
+     overflow: hidden;
+  }
+ 
+ 
+ 
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  /* Features */
+
+   /* Features Plan */
+
+ .feature {
+    gap: 4rem 2rem;
+    margin: 4rem 0;
+  }
+ 
+ .feature__heading {
+    margin: 1rem 0;
+    
+ }
+ 
+ 
+  .feature__image  {
+ width: 100%;
+ object-fit:cover;
+    
+  }
+ 
+ .feature:first-of-type {
+    margin-top: 6rem;
+ }
+ 
+ /* Testimonials */
+
+ .testimonial {
+    padding: 3rem;
+  }
+ 
+ .testimonial__image {
+    position: relative;
+ }
+ 
+  .testimonial__image > img {
+    width: 100%;
+  }
+ 
+  .testimonial__image > .icon-container {
+    position:absolute;
+    top: 3rem;
+    right: -32px;
+  }
+ 
+  @media screen and (min-width: 768px) {
+ .testimonial .quote,
+ .testimonial .quote_author {
+    font-size: 2rem;
+ }
+ .testimonial .quote {
+    margin-left: 6rem;
+ }
+  }
+
+  /* Quotes */
+
+.quote {
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--color-body-darker);
+    line-height: 1.3;
+ 
+ }
+ 
+ .quote__text::before {
+ content: open-quote;
+ }
+ 
+ .quote__text::after {
+    content: close-quote;
+ }
+ 
+.quote__text {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    font-weight: 300;
+}
+
+ .quote__author {
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0rem;
+    font-size: 2rem
+    
+ }
+ 
+ .p__quote {
+    font-size: 1.5rem;
+    font-style: normal;
+    color: var(--color-body);
+ }
+ 
+ .quote__line {
+    position: relative;
+    bottom: 10px;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .quote {
+      font-size: 2rem;
+    }
+    .quote__author {
+      font-size: 1.5rem;
+    }
+    .p__quote {
+      font-size: 1.5rem;
+    }
+  }
+ 
+  /* Cards */
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 20px #f3f3f3;
+    overflow: hidden;
+ 
+ }
+ 
+ .btn-pink {
+    background: pink!important;
+    border-color: pink!important;
+ }
+
+ @media screen and (min-width:768px) {
+    .col-md-2 {
+        flex: 0 0 auto;
+        width: 48%;
+ }
+
+}
+
+/* Buttons */
+.flexbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.btnx {
+   
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 1rem 8vw;
+    text-align: center;
+    text-transform: uppercase;
+    white-space:nowrap;
+    font-size: 1.8rem;
+    font-weight: 600;
+    }
+
+ 
+.btn--outlinex {
+    background: none;
+    border: 2px solid pink;
+    color: black;
+ }
+  
+ .btn--outlinex:hover {
+    background-color: pink;
+    color: white;
+ }
+ 
+ /* Gallery */
+
+ .imagesx {
+    display: grid;
+    overflow: auto;
+    row-gap: 10px;
+    
+    
+}
+.imagesx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+@media screen and (min-width: 1024px)  {
+    .imagesx {
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+        gap:10px 10px;
+        
+
+    }
+
+ img:nth-of-type(3) {
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .imagesx {
+        display: grid;
+        grid-template: repeat(5, 1fr) / repeat(2,1fr);
+        gap: 10px 10px;
+        
+
+    }
+
+
+}
+
